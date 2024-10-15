@@ -1,0 +1,64 @@
+/* Global values for all components */
+.base-component {
+    width: 100%;
+    height: 100%;
+
+    padding-left: 10px;
+
+    border: 1px solid var(--secondary-color);
+    border-radius: 8px;
+    
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.1em;
+    
+    color: var(--font-color);
+    background-color: var(--secondary-color);
+    /*backdrop-filter: blur(10px);*/
+}
+
+.base-component-div {
+    position: relative;
+}
+
+.base-component-div .button-icon {
+    position: absolute;
+    
+    top: 0px;
+    width: 100%;
+    height: 100%;
+
+    transform: scale(0.8);
+    margin-left: 5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-field {
+    margin-left: -5px;
+    width: calc(100% + 5px);
+}
+
+.base-component-div .button {
+    margin-left: 5px;
+}
+
+.base-component-div .button-icon {
+    cursor: pointer;
+	transition: 0.1s cubic-bezier(0.85, 0, 0.15, 1);
+    border-radius: 8px;
+}
+
+.base-component:focus {
+    outline: none;
+    border: 1px solid var(--secondary-color);
+    border-radius: 8px;
+}
+
+.base-component-div .button:active {
+    background-color: var(--primary-color);
+    border-radius: 8px;
+}
+

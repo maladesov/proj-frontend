@@ -1,0 +1,80 @@
+.login-page {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.login-page .background {
+    position: absolute;
+    z-index: -1;
+
+    width: 100%;
+    height: 100%;
+
+    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url('../assets/background0.jpg');
+    background-size: cover;
+    filter: blur(64px);
+    transform: scale(1.3);
+}
+
+.login-page .login-form {
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(24px);
+}
+
+@media (max-width: 660px) {
+    .login-email, .login-password, .login-button {
+        width: 70%;
+        height: 45px;
+    }
+}
+
+@media (min-width: 660px) {
+    .login-email, .login-password, .login-button {
+        width: 350px;
+        height: 45px;
+    }
+}
+
+.login-email, .login-password {
+    margin: 15px;
+}
+
+.login-button {
+    position: relative;
+    top: 40px;
+}
+
+.login-page .login-form #title {
+    position: relative;
+    bottom: 60px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.4em;
+}
+
+.login-page .login-form #hint {
+    position: relative;
+    width: 350px;
+    color: var(--error-font-color);
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.1em; 
+}
+
+.login-page .login-form {
+    background-color: var(--bg-color);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
